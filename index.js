@@ -284,12 +284,14 @@ function addArtist(id, name, years, genre, nationality, bio){
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(/* Code here */){
-
-    /* Code here */
-
+function checkArtist(name){
+  for(let i = 0; i < artists.length; i++){
+    if(artists[i].name === name){
+      return true;
+    }
   }
-
+  }
+console.log(checkArtist("poo"));
 
 
 
