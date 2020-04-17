@@ -212,9 +212,9 @@ console.log(artists[0].name);
 console.log(artists[2].name);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-// let newName = artists
-// artists.splice.name(9, 1, "Vincent Van Gogh");
-// console.log(artists[9].name);
+
+artists[9].name = "Vincent Van Gogh"
+console.log(artists[9].name);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -246,14 +246,31 @@ function removeArtist(array, index) {
   /**
 
 
-/* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
+/* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of 
+artists who were born the 20th century (1800-1900) */
+let artists20s = [];
+function get20s(array){
+  for(let i = 0; i < array.length; i++){
+    let years = array[i].years;
+    let splitYears = years.split(" ");
+    let birthYear = parseInt(splitYears[0]);
+    if(birthYear >= 1800 && birthYear < 1900){
+      artists20s.push([array[i].name, array[i].years]);
+    }
+  }
+}
+get20s(artists);
+console.log(artists20s);
 
-// function get20s(array){
-//   let artists20s = [];
-//   for(let i = 0; i < array.length; i++){
-//     if(array[i].)
-//   }
-    
+
+
+
+
+
+
+
+
+
 
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
