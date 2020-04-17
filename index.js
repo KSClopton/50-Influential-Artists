@@ -278,8 +278,7 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
 function addArtist(id, name, years, genre, nationality, bio){
-
-
+  artists.push({id, name, years, genre, nationality, bio});
   }
 
 
