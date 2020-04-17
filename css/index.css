@@ -1,4 +1,229 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+  font-size: 2rem;
+  color: #6e5252;
+}
+nav a {
+  padding: 0 3%;
+  text-decoration: none;
+  color: grey;
+}
+nav .borderanchor {
+  border-left: 2px darkgrey solid;
+  border-right: 2px darkgrey solid;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #696969;
+  font-weight: bold;
+}
+body {
+  padding: 3% 10%;
+}
+@media (max-width: 800px) {
+  body {
+    padding: 0%;
+  }
+}
+hr {
+  margin: 2% 0%;
+}
+img:hover {
+  opacity: 80%;
+}
+.title-container {
+  padding: 20%;
+  background: url(/Users/kylebecca3/Desktop/Kyles-projects/50-Influential-Artists/assets/home.png);
+  background-size: cover;
+  text-align: center;
+  text-decoration: bold;
+  opacity: 80%;
+  margin: 0 2%;
+}
+.title-container h1 {
+  font-size: 7rem;
+  color: white;
+}
+.title-container .button {
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 0.5% 1%;
+}
+.artists-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin: 0 2%;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .artist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin: 2%;
+    justify-content: center;
+  }
+}
+.artist a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 3%;
+}
+@media (max-width: 800px) {
+  .artist a {
+    color: white;
+    padding: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .vangogh {
+    font-size: 1rem;
+    background: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg);
+    color: white;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .vangogh:hover {
+    opacity: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .mallord {
+    font-size: 0.1rem;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/600px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg);
+    color: white;
+    background-size: cover;
+    padding: 8%;
+    border-radius: 10px;
+    border: 2px red solid;
+  }
+  .mallord:hover {
+    opacity: 80%;
+  }
+}
+.artist img {
+  max-width: 60%;
+  align-items: stretch;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .artist img {
+    max-width: 40%;
+    display: none;
+  }
+}
+.artist .bio {
+  max-width: 70%;
+  align-items: stretch;
+  margin-bottom: auto;
+}

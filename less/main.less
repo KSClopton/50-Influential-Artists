@@ -1,0 +1,108 @@
+body{
+    padding: 3% 10%;
+    @media @tablet {
+        padding: 0%;
+    }
+}
+hr{
+    margin: 2% 0%;
+}
+img:hover{
+    opacity: 80%;
+}
+.title-container{
+    padding: 20%;
+    background: url(/Users/kylebecca3/Desktop/Kyles-projects/50-Influential-Artists/assets/home.png);
+    // background-position: center center;
+    // background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    text-decoration: bold;
+
+    opacity: 80%;
+    margin: 0 2%;
+
+    h1{
+        font-size: 7rem;
+        color: white;
+
+    }
+    .button{
+        .button(2rem, 10px);
+        padding: .5% 1%;
+        }
+}
+.artists-container{
+    .flexing(row, center);
+    @media @tablet{
+        .flexing(column, center);
+    }
+}
+    .artist {
+        .flexing(column, center);
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin: 0 2%;
+        height: auto;
+        @media @tablet{
+            .flexing(row, center);
+            width: 100%;
+            flex-wrap: nowrap;
+            margin: 2%;
+            justify-content: center;
+        }
+    }
+    .artist a{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        padding: 3%;
+        @media @tablet{
+            color: white;
+            padding: 5%;
+        }
+    }
+    .vangogh{
+        @media @tablet{
+            font-size: 1rem;
+            background: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg);
+            color: white;
+            background-size: cover;
+            border-radius: 10px;
+            &:hover{
+                opacity: 80%;
+            }
+        }
+    }
+    .mallord{
+        @media @tablet{
+            font-size: .1rem;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/600px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg);
+            color: white;
+            background-size: cover;
+            padding: 8%;
+            border-radius: 10px;
+            &:hover{
+                opacity: 80%;
+            }
+            border: 2px red solid;
+        }
+    }
+    .artist img{
+        max-width: 60%;
+        align-items: stretch;
+        border-radius: 5px;
+       
+        @media @tablet{
+            max-width: 40%;
+           display: none;
+        }
+    }
+    .artist .bio{
+        max-width: 70%;
+        align-items: stretch;
+        margin-bottom: auto;
+       
+    }
